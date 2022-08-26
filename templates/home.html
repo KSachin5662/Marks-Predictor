@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/marks.css">
+     <title>Predictor</title> 
+
+</head>
+<body>
+    <div class="d1" style="box-shadow: 0px 0px 5px 5px rgb(107, 57, 57)">
+        <form action="/predict" method="POST">
+            <div style=" font-weight: bold;">
+            Mid1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" name="mid1" style="height: 30px;width: 100px ; font-size: large;" ><br><br>
+            Mid2:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" name="mid2" style="height: 30px;width: 100px ; font-size: large;"><br><br>
+            <div class="submit"><input type="submit" value="Predict" style="height:50px; width:90px; font-size: large;
+                font-weight: bold;color: white;background-color: green;box-shadow: 5px 5px 10px rgb(245, 248, 250) inset">
+            </div></div>
+        </form>
+        <h2 style="color: #e3dde1;">Your Predicted CGPA:</h1>
+        <h1 style="color: rgb(0, 255, 0);">{{result}}</h1>
+        Note:<div style="color:rgb(0, 251, 255);font-weight: bold;">{{note}}
+    </div>
+</body>
+</html>
