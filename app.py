@@ -4,7 +4,6 @@ import pickle
 import pymsgbox as msg
 
 from flask import render_template , request , Flask
-import pyautogui as pag
 
 app = Flask(__name__)
 
