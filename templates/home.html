@@ -8,21 +8,35 @@
      <title>Predictor</title> 
 
 </head>
-<body>
-    <div class="d1" style="box-shadow: 0px 0px 5px 5px rgb(107, 57, 57)">
-        <form action="/predict" method="POST">
-            <div style=" font-weight: bold;">
-            Mid1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            <input type="text" name="mid1" style="height: 30px;width: 100px ; font-size: large;" ><br><br>
-            Mid2:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            <input type="text" name="mid2" style="height: 30px;width: 100px ; font-size: large;"><br><br>
-            <div class="submit"><input type="submit" value="Predict" style="height:50px; width:90px; font-size: large;
-                font-weight: bold;color: white;background-color: green;box-shadow: 5px 5px 10px rgb(245, 248, 250) inset">
-            </div></div>
-        </form>
-        <h2 style="color: #e3dde1;">Your Predicted CGPA:</h1>
-        <h1 style="color: rgb(0, 255, 0);">{{result}}</h1>
-        Note:<div style="color:rgb(0, 251, 255);font-weight: bold;">{{note}}
+<body class="sticky">
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        
+        <div class="d1" style="box-shadow: 0px 4px 5px 5px #2d2f30 ; border-radius: 5px; ">
+            <form action="/predict" method="POST">
+                <div style=" font-weight: bold;">
+                Enter Between 0 to 10<br><br>
+                Mid1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <input type="text" name="mid1" style="height: 30px;width: 100px ; font-size: large;" ><br><br>
+                Mid2:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <input type="text" name="mid2" style="height: 30px;width: 100px ; font-size: large;"><br><br>
+                <div class="submit"><input type="submit" value="Predict" style="height:50px; width:90px; font-size: large; border-radius: 5px;
+                    font-weight: bold;color: white;background-color: #3282B8;box-shadow: 5px 5px 10px #0F4C75 inset">
+                </div></div>
+            </form>
+            <h2 style="color: #BBE1FA;">Your Predicted CGPA:</h1>
+            <h1 style="color: #BBE1FA;">{{result}}</h1>
+            Note:<div style="color:#BBE1FA;font-weight: bold;">{{note}}
+        </div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
     </div>
 </body>
 </html>
