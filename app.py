@@ -30,7 +30,9 @@ def predict():
         foutput = np.around(output, 2)
         if foutput>10:
             foutput=10
-        if foutput>8.0:
+            str = 'EXCELLENT!'
+            return render_template('home.html',result=foutput,note=str)
+        elif foutput>8.0:
             str1 = 'WELL DONE!'
             return render_template('home.html',result=foutput[0][0],note=str1)
         elif foutput>6.0:
