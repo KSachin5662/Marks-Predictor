@@ -1,4 +1,9 @@
-LINEAR REGRESSION MODEL:
+WebsiteLink:
+https://studentmarks-predictor.herokuapp.com
+
+MID1 and MID2 Based on GPA,So You Must Enter Between 0 to 10.
+
+USED MACHINE LEARNING MODEL-LINEAR REGRESSION MODEL:
 
 #marksprediction.ipynb:
 
