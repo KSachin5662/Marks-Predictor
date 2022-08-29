@@ -1,5 +1,6 @@
 WebsiteLink:
 https://studentmarks-predictor.herokuapp.com
+NOTE:RELOAD IF ANY ERROR
 
 MID1 and MID2 Based on GPA,So You Must Enter Between 0 to 10.
 
