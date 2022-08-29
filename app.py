@@ -32,16 +32,16 @@ def predict():
             foutput=10
         if foutput>8.0:
             str1 = 'WELL DONE!'
-            return render_template('home.html',result=foutput,note=str1)
+            return render_template('home.html',result=foutput[0][0],note=str1)
         elif foutput>6.0:
             str2 = 'GOOD!KEEP PRACTICING'
-            return render_template('home.html',result=foutput,note=str2)
+            return render_template('home.html',result=foutput[0][0],note=str2)
         elif foutput>5.0:
             str3 = 'BORDER PASS!NEED TO BE PRACTICE'
-            return render_template('home.html',result=foutput,note=str3)
+            return render_template('home.html',result=foutput[0][0],note=str3)
         else:
             str4 = 'FAILED'
-            return render_template('home.html',result=foutput,note=str4)
+            return render_template('home.html',result=foutput[0][0],note=str4)
 
 if __name__ == '__main__':
     app.run(debug=True)
